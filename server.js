@@ -62,6 +62,45 @@ app.get('/api/health', (req, res) => {
   });
 });
 
+// Root route handler
+app.get('/', (req, res) => {
+  res.json({
+    message: 'Portfolio Backend API',
+    version: '1.0.0',
+    endpoints: {
+      health: '/api/health',
+      admin: '/api/admin',
+      content: '/api/content',
+      projects: '/api/projects',
+      blog: '/api/blog',
+      contact: '/api/contact',
+      messages: '/api/messages',
+      upload: '/api/upload',
+      experiences: '/api/experiences'
+    }
+  });
+});
+
+// Catch-all route for undefined paths
+app.use((req, res) => {
+  res.status(404).json({
+    success: false,
+    message: 'Endpoint not found',
+    path: req.path,
+    availableEndpoints: [
+      '/api/health',
+      '/api/admin/login',
+      '/api/content/:section',
+      '/api/projects',
+      '/api/blog',
+      '/api/contact',
+      '/api/messages',
+      '/api/upload',
+      '/api/experiences'
+    ]
+  });
+});
+
 // Start server only when not running on Vercel (serverless)
 if (process.env.NODE_ENV !== 'production') {
   const PORT = process.env.PORT || 5000;
