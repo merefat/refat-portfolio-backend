@@ -1,0 +1,31 @@
+{
+  "categories": [
+    {
+      "name": "Frontend",
+      "skills": [
+        { "name": "React.js", "level": 90 },
+        { "name": "Tailwind CSS", "level": 85 },
+        { "name": "JavaScript", "level": 90 },
+        { "name": "HTML/CSS", "level": 95 }
+      ]
+    },
+    {
+      "name": "Backend",
+      "skills": [
+        { "name": "Node.js", "level": 85 },
+        { "name": "Express", "level": 80 },
+        { "name": "MongoDB", "level": 75 },
+        { "name": "REST APIs", "level": 85 }
+      ]
+    },
+    {
+      "name": "Tools & Others",
+      "skills": [
+        { "name": "Git", "level": 85 },
+        { "name": "WordPress", "level": 80 },
+        { "name": "AI/ML", "level": 70 },
+        { "name": "Figma", "level": 75 }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "email": "refat@example.com",
+  "phone": "+8801234567890",
+  "socialLinks": [
+    { "platform": "github", "url": "https://github.com/merefat", "icon": "🐙" },
+    { "platform": "codeforces", "url": "https://codeforces.com/profile/refat61899200", "icon": "⚡" },
+    { "platform": "facebook", "url": "https://www.facebook.com/lm.refat", "icon": "📘" },
+    { "platform": "instagram", "url": "https://www.instagram.com/lmrefat/", "icon": "📷" }
+  ]
+}

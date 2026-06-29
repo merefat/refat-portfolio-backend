@@ -1,0 +1,29 @@
+{
+  "title": " Refat",
+  "subtitle": "Full Stack Developer",
+  "tagline": "Software Engineer",
+  "description": "Passionate about creating beautiful, functional, and user-centered digital experiences. I specialize in React.js, Node.js, WordPress, and AI development to bring your ideas to life.",
+  "profileImage": "/img/487f9adb-3c24-4f56-abbd-0ec3cbfdcc78-removebg-preview.png",
+  "socialLinks": [
+    {
+      "platform": "github",
+      "url": "https://github.com/merefat",
+      "icon": "🐙"
+    },
+    {
+      "platform": "codeforces",
+      "url": "https://codeforces.com/profile/refat61899200",
+      "icon": "⚡"
+    },
+    {
+      "platform": "facebook",
+      "url": "https://www.facebook.com/lm.refat",
+      "icon": "📘"
+    },
+    {
+      "platform": "instagram",
+      "url": "https://www.instagram.com/lmrefat/",
+      "icon": "📷"
+    }
+  ]
+}
