@@ -2,6 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
+const path = require('path');
 
 // Import routes
 const authRoutes = require('./routes/auth');
@@ -62,8 +63,13 @@ app.get('/api/health', (req, res) => {
   });
 });
 
-// Root route handler
+// Root route handler - Serve admin panel
 app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'admin.html'));
+});
+
+// API info endpoint
+app.get('/api', (req, res) => {
   res.json({
     status: 'API is running',
     message: 'Portfolio Backend v1.0.0'
