@@ -65,19 +65,8 @@ app.get('/api/health', (req, res) => {
 // Root route handler
 app.get('/', (req, res) => {
   res.json({
-    message: 'Portfolio Backend API',
-    version: '1.0.0',
-    endpoints: {
-      health: '/api/health',
-      admin: '/api/admin',
-      content: '/api/content',
-      projects: '/api/projects',
-      blog: '/api/blog',
-      contact: '/api/contact',
-      messages: '/api/messages',
-      upload: '/api/upload',
-      experiences: '/api/experiences'
-    }
+    status: 'API is running',
+    message: 'Portfolio Backend v1.0.0'
   });
 });
 
@@ -86,18 +75,7 @@ app.use((req, res) => {
   res.status(404).json({
     success: false,
     message: 'Endpoint not found',
-    path: req.path,
-    availableEndpoints: [
-      '/api/health',
-      '/api/admin/login',
-      '/api/content/:section',
-      '/api/projects',
-      '/api/blog',
-      '/api/contact',
-      '/api/messages',
-      '/api/upload',
-      '/api/experiences'
-    ]
+    path: req.path
   });
 });
 
